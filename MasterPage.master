@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <link href="../css/fonts.css" rel="stylesheet" />
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+      <link href="../css/StyleSheet.css" rel="stylesheet" />
+       <link href="../css/hover-min.css" rel="stylesheet" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <%--for fonts--%>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="mysite">
+    <div class="header">
+        <div class="header-holder">
+       <div class="image-holder"><img id="SiteLogo" src="images/Logo.png" class="img-circle"  runat="server"/></div>
+           
+            <div id="SiteTitle" class="header-title" runat="server">نظام القبول والتسجيل</div>
+                          <a href="RegisterCourse.aspx" class="header-title-left">تسجيل طالب في المواد</a> <i class="header-title-left fa fa-address-book-o""></i>
+
+              <a href="StudentsManagement.aspx" class="header-title-left">إدارة الطلاب</a> <i class="header-title-left fa fa-users""></i>
+        <a href="CourseManagement.aspx" class="header-title-left">إدارة المواد</a> <i class="header-title-left fa fa-comments-o"></i> 
+          <div class="clear"></div>  
+        </div>
+     
+    </div>
+      
+       
+                <div class="clear"></div>
+      <div class="container" >
+
+                <div class="clear"></div>
+<form id="form1" runat="server">
+    <div>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        </form>
+           <%-- </div>--%>
+        </div>
+     
+    <div id="footer">
+            <div class="footer-holder">
+                <div class="copyright"></div>
+               
+                </div>
+        </div>
+    </div>
+    
+</body>
